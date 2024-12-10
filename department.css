@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+/* Navbar Styling */
+.navbar {
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px;
+}
+
+/* Container for the section */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Section Title Styles */
+.section-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Grid Layout for Departments */
+.department-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0;
+}
+/* Individual Department Cards */
+.department-card {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.department-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Department Title */
+.department-card h3 {
+    color: #007BFF;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Department Description */
+.department-card p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+/* Footer */
+footer {
+    background-color: #0288d1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .section-title {
+        font-size: 1.5em;
+    }
+
+    .department-card {
+        padding: 15px;
+    }
+
+    .department-card h3 {
+        font-size: 1.2em;
+    }
+
+    .department-card p {
+        font-size: 0.9em;
+    }
+}

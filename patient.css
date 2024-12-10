@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar Styling */
+.navbar {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for the content */
+.container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: auto; /* Center the container */
+}
+
+/* Style for menu items */
+.menu-item {
+    margin: 15px 0;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-item a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #0288d1;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto; /* Push footer to the bottom */
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .menu-item a {
+        font-size: 1em;
+    }
+}
+
+/* Improved Responsiveness for Smaller Devices */
+@media (max-width: 576px) {
+    .menu-item a {
+        font-size: 0.9em;
+    }
+}
